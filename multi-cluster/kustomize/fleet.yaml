@@ -1,17 +1,17 @@
 namespace: fleet-kustomize-example
-targetCustomizations:
-- name: x86
-#  clusterSelector:
-#    matchLabels:
-#      management.cattle.io/cluster-display-name: opensuse-micro
-  clusterName: opensuse-micro
-  kustomize:
-    dir: overlays/x86
-
-- name: arm64
-#  clusterSelector:
-#    matchLabels:
-#      management.cattle.io/cluster-display-name: sle-micro
-  clusterName: sle-micro
-  kustomize:
-    dir: overlays/arm64
+#targetCustomizations:
+#- name: x86
+##  clusterSelector:
+##    matchLabels:
+##      management.cattle.io/cluster-display-name: opensuse-micro
+#  clusterName: opensuse-micro
+#  kustomize:
+#    dir: overlays/x86
+#
+#- name: arm64
+##  clusterSelector:
+##    matchLabels:
+##      management.cattle.io/cluster-display-name: sle-micro
+#  clusterName: sle-micro
+#  kustomize:
+#    dir: overlays/arm64
