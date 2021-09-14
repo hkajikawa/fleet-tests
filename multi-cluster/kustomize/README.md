@@ -9,20 +9,13 @@ The application will be customized as follows per environment:
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: kustomize
+  name: fleet-test
   namespace: fleet-default
 spec:
+  branch: main
   repo: https://github.com/hkajikawa/fleet-tests
   paths:
   - multi-cluster/kustomize
   targets:
-  - name: x86
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: opensuse-micro
-
-  - name: arm64
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: sle-micro
+    - clusterSelector: {}
 ```
